@@ -25,8 +25,10 @@
   oik_window_width_resize();
 
   $(window).bind( 'resize', oik_window_width_resize );
+  $(window).scroll( oik_window_width_scroll );
 
   function oik_window_width_create() {
+    //alert( "wwc" );
     $('body').prepend( '<span class="oik-width">oik-width</span><span class="oik-mq-min"></span><span class="oik-mq-max"></span>' );
   }
 
@@ -36,7 +38,11 @@
     x = el.css( {  'display': 'inline', 'text-align': 'center', 'background': 'rgba(255,255,0, 0.7)' } );
     el.text( settings.text + width + settings.dpr + dpr );
     el.css( 'z-index', 100000 );
-    el.css( 'position', 'absolute').css( 'top', 0 ).css( 'left', '50%' );
+    el.css( 'position', 'fixed').css( 'top', 0 ).css( 'left', '50%' );
+  }
+
+  function oik_window_width_scroll() {
+    el.css( 'top', 0 ); 
   }
 };
 })(jQuery);
