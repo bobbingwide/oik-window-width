@@ -44,6 +44,15 @@ function oik_ww_wp_footer() {
   bw_jquery( 'span.cancan', "windowSize", null );
 }
 
+add_action( "oik_admin_menu", "oik_ww_admin_menu" );
+
+/**
+ * Set the plugin server
+ */
+function oik_ww_admin_menu() {
+  oik_register_plugin_server( __FILE__ );
+}
+
 add_action( "admin_notices", "oik_ww_activation" );
 /**
 */ 
