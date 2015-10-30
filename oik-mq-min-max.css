@@ -1,0 +1,65 @@
+/* (C) Copyright Bobbing Wide 2012, 2013
+ *
+ * This is the place where we put media query information on the page. e.g. content: "  min-width: 960px";
+*/
+  
+span.oik-mq-min {  width: 150px; -webkit-transform-origin: 0% 0%; -webkit-transform: translate( 0px, 100px) rotate( -45deg ); }
+span.oik-mq-max {  width: 200px; }
+
+
+@media screen and ( min-width: 768px ) {
+  span.oik-mq-min:before { content: " min-width: 768px"; /* background-color: #4C4C4C; */ }
+}/*/mediaquery*/
+
+/* Min-width 960 is for a normal size screen */
+@media screen and ( min-width: 960px ) {
+  span.oik-mq-min:before { content: " min-width: 960px"; color: #000000; }
+}/*/mediaquery*/
+
+@media screen and ( min-width: 1200px ) {
+  span.oik-mq-min:before { content: " min-width: 1200px"; color: #000000; }
+}/*/mediaquery*/
+
+@media screen and ( max-width: 1200px ) {
+  span.oik-mq-max:before { content: " max-width: 1200px"; color: #000000; }
+}/*/mediaquery*/
+
+@media screen and ( max-width: 1024px ) {
+  span.oik-mq-max:before { content: " max-width: 1024px"; color: #000000; }
+}/*/mediaquery*/
+  
+@media screen and ( max-width: 960px ) {
+  span.oik-mq-max:before { content: " max-width: 960px"; /* background-color: #606060; */}
+}/*/mediaquery*/
+
+@media screen and ( max-width: 959px ) {
+  span.oik-mq-max:before { content: " max-width: 959px"; /* background-color: #606060; */}
+}/*/mediaquery*/  
+
+@media screen and ( max-width: 768px ) {
+  span.oik-mq-max:before { content: " max-width: 768px"; /* background-color: #4C4C4C; */ }
+}/*/mediaquery*/
+
+/* half page - 666 x 601 */
+@media screen and ( max-width: 666px ) {
+  span.oik-mq-max:before { content: " max-width: 666px"; /* background-color: #424242; */ }
+}/*/mediaquery*/
+
+/* half page - 640 x 960 iPhone */
+@media screen and ( max-width: 666px ) {
+  span.oik-mq-max:before { content: " max-width: 640px"; /* background-color: #404040; */ }
+}/*/mediaquery*/
+
+@media screen and ( max-width: 480px ) {
+  span.oik-mq-max:before { content: " max-width: 480px"; /* background-color: #303030; */ }
+}/*/mediaquery*/
+
+@media screen and ( max-width: 320px ) {
+  span.oik-mq-max:before{ content: " max-width: 320px"; /* background-color: #202020; */ }
+}/*/mediaquery*/
+
+
+
+               
+
+
